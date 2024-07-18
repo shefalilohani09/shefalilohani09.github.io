@@ -1,0 +1,42 @@
+header {
+    background-color: cornflowerblue;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    
+
+    h1 {
+        float: left;
+        margin-left: 5px;
+    }
+    ul {
+        position: absolute;
+        top: 20%;
+        right: 0;
+    }
+    
+    h1, ul, li {
+        display: inline;
+    } 
+    li {
+        margin-right: 10px;
+    }
+    h3{
+        align-items: center;
+        position: static;
+    }
+
+    
+}
+img {
+    margin: 200px;
+    height: 400px;
+    width: 300px;
+    border-radius: 40%;
+}
+
+
+
+table {
+    border: 2px solid black;
+}
