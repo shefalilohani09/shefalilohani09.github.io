@@ -1,5 +1,5 @@
 header {
-    background-color: cornflowerblue;
+    background-color: rgb(111, 155, 238);
     height: 100px;
     width: 100%;
     position: fixed;
@@ -24,9 +24,13 @@ header {
     h3{
         align-items: center;
         position: static;
+        
     }
 
     
+}
+body {
+    background-color:rgba(68, 68, 68, 0.4) ;
 }
 img {
     margin: 200px;
@@ -39,4 +43,9 @@ img {
 
 table {
     border: 2px solid black;
+    th, td {
+        border: 1px solid;
+
+    }
+
 }
