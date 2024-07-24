@@ -1,14 +1,12 @@
 header {
-    background-color: rgb(111, 155, 238);
+    /* background-color: rgb(111, 155, 238);
     height: 100px;
     width: 100%;
-    position: fixed;
+    position: fixed; */
+
     
 
-    h1 {
-        float: left;
-        margin-left: 5px;
-    }
+    
     ul {
         position: absolute;
         top: 20%;
@@ -19,7 +17,7 @@ header {
         display: inline;
     } 
     li {
-        margin-right: 10px;
+        margin-top: 10px;
     }
     h3{
         align-items: center;
@@ -29,14 +27,58 @@ header {
 
     
 }
+.head-section {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    background: #1a1a1a;
+
+}
+.link-group {
+
+    list-style: none;
+    display: flex;
+}
+.link a{
+    color: blueviolet;
+    opacity: 0.7;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    margin: 0 20px;
+    line-height: 80px;
+    /* transition: .5s; */
+    font-size: 20px;
+}
 body {
-    background-color:rgba(68, 68, 68, 0.4) ;
+    /* background-color:rgba(68, 68, 68, 0.4) ; */
+}
+h1 {
+    color: #051888;
+font-size: 100px;
+text-transform: capitalize;
+font-weight: 300;
+
 }
 img {
-    margin: 200px;
-    height: 400px;
-    width: 300px;
-    border-radius: 40%;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    height: 550px;
+    width: 400px;
+    object-fit: cover;
+    /* opacity: 0.9; */
+    border-radius: 5%;
+}
+.description-me {
+    position: relative;
+    margin-top: 250px;
+    /* border: 1px solid; */
 }
 
 
@@ -45,7 +87,37 @@ table {
     border: 2px solid black;
     th, td {
         border: 1px solid;
+        
 
     }
 
 }
+.table-div {
+    /* background-repeat: no-repeat, repeat;
+  background-image: url("images/blend-modes-image-2.jpg"), url("images/image-blending.jpg");
+  background-blend-mode: lighten;
+  height: 400px;
+        width: 150px; */
+}
+
+/* .skillset-div {
+    height: 500px;
+    width: 500px;
+    background-color: rgb(227, 130, 227);
+    margin-top: 10px;
+}
+.technical-skillset-div {
+    height: 400px;
+    width: 400px;
+    background-color: aquamarine;
+    border: 2px solid;
+    
+
+}
+.skills-div {
+    height: 500px;
+    width: 400px;
+    background-color: darkcyan;
+    margin-top: 10px;
+    
+} */
