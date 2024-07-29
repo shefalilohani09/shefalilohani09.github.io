@@ -11,6 +11,7 @@ header {
         position: absolute;
         top: 20%;
         right: 0;
+       
     }
     
     h1, ul, li {
@@ -18,6 +19,11 @@ header {
     } 
     li {
         margin-top: 10px;
+    }
+    ul.img-portfolio {
+        height: 10px;
+        width: 20px;
+        position: fixed;
     }
     h3{
         align-items: center;
@@ -38,6 +44,10 @@ header {
     z-index: 9;
     background: #1a1a1a;
 
+}
+div.head-img {
+    font-size: 25px;
+  font-weight: bold;
 }
 .link-group {
 
@@ -65,7 +75,15 @@ text-transform: capitalize;
 font-weight: 300;
 
 }
-img {
+h2 {
+    color: #2E236C;
+    font-size: 50px;
+}
+p.intro-top {
+    color: #4b3e95;
+    font-size: 40px;
+}
+img.image-me {
     position: absolute;
     top: 20%;
     right: 0;
@@ -78,7 +96,16 @@ img {
 .description-me {
     position: relative;
     margin-top: 250px;
-    /* border: 1px solid; */
+    size: 10px;
+    h3 {
+        color: #051888;
+        font-size: 30px;
+    }
+    p {
+        color: navy;
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 }
 
 
@@ -92,32 +119,52 @@ table {
     }
 
 }
-.table-div {
-    /* background-repeat: no-repeat, repeat;
-  background-image: url("images/blend-modes-image-2.jpg"), url("images/image-blending.jpg");
-  background-blend-mode: lighten;
-  height: 400px;
-        width: 150px; */
+h1.social-head {
+    align-items: center;
+    size: 40px;
 }
+.grid-social {
+    display: grid;
+    grid-template: auto auto auto auto;
+   grid-gap: 20px;
+   height: 100px;
+   margin-top: 2%;
 
-/* .skillset-div {
-    height: 500px;
-    width: 500px;
-    background-color: rgb(227, 130, 227);
-    margin-top: 10px;
-}
-.technical-skillset-div {
-    height: 400px;
-    width: 400px;
-    background-color: aquamarine;
-    border: 2px solid;
-    
+   /* background-color: antiquewhite; */
 
 }
-.skills-div {
-    height: 500px;
-    width: 400px;
-    background-color: darkcyan;
-    margin-top: 10px;
+
+.grid-one {
+   
+    grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
     
-} */
+    
+}
+
+.grid-two {
+    grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+ 
+}
+.grid-three {
+    grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+
+}
+.grid-four {
+    grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+
+}
+
+
+ footer {
+    position: fixed;
+    bottom: 1%;
+    background-color: rgb(192, 175, 175);
+    width: 100%;
+    height: 30px;
+    text-align: center;
+
+ }
