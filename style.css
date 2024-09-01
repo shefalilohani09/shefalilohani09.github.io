@@ -290,3 +290,26 @@ h1.social-head {
  .head-left{
     background-color: #954c3e;
  }
+ @media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p.intro-top {
+        font-size: 16px;
+    }
+
+    .projects_div,
+    .education_clg {
+        max-width: 100%;
+        padding: 15px;
+    }
+    .image-me{
+        max-height: 180px;
+        max-width: 130px;
+    }
+}
