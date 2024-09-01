@@ -55,22 +55,24 @@ div.head-img {
     display: flex;
 }
 .link a{
-    color: blueviolet;
-    opacity: 0.7;
+    color: rgb(85, 30, 223);
+    opacity: 0.6;
     text-decoration: none;
     text-transform: capitalize;
     padding: 10px 30px;
     margin: 0 20px;
     line-height: 80px;
-    /* transition: .5s; */
+    transition: .5s;
     font-size: 20px;
 }
-body {
-    /* background-color:rgba(68, 68, 68, 0.4) ; */
+.link a:hover, .link.active a{
+    opacity: 1;
 }
+
 h1 {
     color: #051888;
-font-size: 100px;
+font-size: 90px;
+margin-top: 50px;
 text-transform: capitalize;
 font-weight: 300;
 
@@ -78,6 +80,15 @@ font-weight: 300;
 h2 {
     color: #2E236C;
     font-size: 50px;
+}
+h3 {
+    color: #051888;
+        font-size: 28px;
+}
+h4 {
+    font-size: 20px;
+    color: #05294d;
+    font-style: oblique;
 }
 p.intro-top {
     color: #4b3e95;
@@ -96,39 +107,140 @@ img.image-me {
 .description-me {
     position: relative;
     margin-top: 250px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px;
+    border: 2px solid rgba(77, 58, 141, 0.189);
     size: 10px;
-    h3 {
-        color: #051888;
-        font-size: 30px;
-    }
+
     p {
         color: navy;
         font-style: italic;
         font-family: Arial, Helvetica, sans-serif;
     }
 }
-
-
-
-table {
-    border: 2px solid black;
-    th, td {
-        border: 1px solid;
-        
-
-    }
-
+h5 {
+    color: #0530ad;
+    font-size: large;
 }
+
+.education_clg {
+    background: white;
+    margin: auto;
+    margin-top: 10%;
+    max-width: 35%;
+    padding: 20px 50px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  .education_clg:hover {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    animation-duration: 0.25s;
+    border-left: 8px solid #545AA7;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
 h1.social-head {
     align-items: center;
-    size: 40px;
+    size: 50px;
+}
+/*  */
+
+.skills-div-names {
+    display: grid;
+    grid-template: auto ;
+    margin-left: 90px;
+   grid-gap: 20px;
+   height: 100px;
+   margin-top: 2%;
+   color: #1b32b0;
+   row-gap: 50px;
+
+
+   /* background-color: antiquewhite; */
+.skills-div-names:hover {
+    color: #6F00FF;
+}
+}
+
+.skill-one {
+   
+    grid-column: 1/ span 1;
+  grid-row: 1 / span 1;
+    
+    
+}
+
+.skill-two {
+    grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+ 
+}
+.skill-three {
+    grid-column: 3/ span 1;
+  grid-row: 1 / span 1;
+
+}
+.grid-four {
+    grid-column: 1/ span 1;
+  grid-row: 1 / span 1;
+
+}
+.grid-five {
+    grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+
+}
+.grid-six {
+    grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+
+}
+.grid-seven {
+    grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+
+}
+.grid-eight {
+    grid-column: 4 / span 1;
+  grid-row: 2 / span 1;
+
+}
+
+/* Projects */
+
+.projects_div {
+    background: #d6e2e8;
+    margin: auto;
+    margin-top: 5%;
+    max-width: 50%;
+    padding: 20px 50px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  .projects_div:hover {
+    border-radius: 10px;
+    
+    animation-duration: 0.25s;
+    border-left: 10px solid #00008B;
+    border-top: 8px solid #00008B;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+
+
+/*  */
+.social-head{
+    margin-top: 100px;
 }
 .grid-social {
     display: grid;
     grid-template: auto auto auto auto;
    grid-gap: 20px;
    height: 100px;
-   margin-top: 2%;
+   margin-top: 50px;
+   margin-left: 70px;
 
    /* background-color: antiquewhite; */
 
@@ -138,8 +250,7 @@ h1.social-head {
    
     grid-column: 1 / span 1;
   grid-row: 1 / span 1;
-    
-    
+ 
 }
 
 .grid-two {
@@ -158,6 +269,13 @@ h1.social-head {
 
 }
 
+/* Connect */
+.Contact_me {
+    margin-left: 75px;
+    color: #066ce8;
+
+}
+
 
  footer {
     position: fixed;
@@ -167,4 +285,8 @@ h1.social-head {
     height: 30px;
     text-align: center;
 
+ }
+
+ .head-left{
+    background-color: #954c3e;
  }
